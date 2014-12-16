@@ -1,17 +1,18 @@
-#data Structures
+#Slices
 
-A collection of [Go](https://golang.org/) code for me to re-learn data structures including:
+A very short example of slices in [Go](https://golang.org/). Copied from my examples of [common data structures](https://github.com/obihann/GoDataStructures/stack), I am using the stack as a way to implament slices.
 
-* [**Stacks**](/stack)
+* [**Arrays**](/arrays)
+    A stack built with a traditional array. You will notice this as a fixed size.
+
+* [**Copy**](/Copy)
+    A stack built with slices implementing the copy method. This is more efficent than a traditional array as it allows you to easily grow the array by making larger arrays and copying your contents over.
+
+* [**Append**](/append)
+    A stack built with append. Append allows us to grow the array as we need, using as little memory as possible.
+
+##Stacks
     A fixed size structure with push and pop methods, following the FILO rule (first in, last out)
-    
-* [**Queues**](/queue)
-    A fixed size structure with add and del methods, following the FIFO rule (first in, first out)
-    
-* [**Linked Lists**](/linkedlist)
-    A non-fixed (only restricted by avaliable memory) data structure with add and del methods. Each item or 'node' in     the list contains a pointer to the next item in the list. Their is no first or last out rule that applies to this     list as it allows the removal of any item in any order.
-
-####These were originally all written in [C++](https://github.com/obihann/datastructures), feel free to check them out.
 
 ##License
 This tool is protected by the [GNU General Public License v2](http://www.gnu.org/licenses/gpl-2.0.html).
