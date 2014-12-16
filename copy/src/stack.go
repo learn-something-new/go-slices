@@ -17,18 +17,6 @@ func NewStack() *Stack {
 	return &s
 }
 
-func (s *Stack) Top() int {
-	return s.top
-}
-
-func (s *Stack) Len() int {
-	return len(s.arr)
-}
-
-func (s *Stack) Cap() int {
-	return cap(s.arr)
-}
-
 func (s *Stack) Push(n int) error {
 	s.top++
 

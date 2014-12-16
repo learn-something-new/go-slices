@@ -11,38 +11,21 @@ type Stack struct {
 
 func NewStack() *Stack {
 	var s Stack = Stack{}
-	s.arr = make([]int, max)
+	s.arr = make([]int, 1, max)
 	s.top = -1
 
 	return &s
 }
 
-func (s *Stack) Top() int {
-	return s.top
-}
-
-func (s *Stack) Len() int {
-	return len(s.arr)
-}
-
-func (s *Stack) Cap() int {
-	return cap(s.arr)
-}
-
 func (s *Stack) Push(n int) error {
 	s.top++
 
-	if (s.top) >= cap(s.arr) {
-		newArr := make([]int, max)
-		s.arr = append(s.arr, newArr...)
-	}
-
-	if (s.top) >= cap(s.arr) {
+	if len(s.arr) >= cap(s.arr) {
 		s.top--
 		return errors.New("Stack is full.")
+	} else {
+		s.arr = append(s.arr, n)
 	}
-
-	s.arr[s.top] = n
 
 	return nil
 }

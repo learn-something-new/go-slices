@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/obihann/GoSlices/array/src"
+	"github.com/obihann/GoSlices/append/src"
+	//"github.com/obihann/GoSlices/array/src"
 	//"github.com/obihann/GoSlices/copy/src"
-	//"github.com/obihann/GoSlices/append/src"
 )
 
 func main() {
-	stack := Stack.NewStack()
 	size := 20
+	stack := Stack.NewStack()
 
 	for x := 0; x < size; x++ {
 		if err := stack.Push(x + 1); err != nil {

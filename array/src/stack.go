@@ -16,10 +16,6 @@ func NewStack() *Stack {
 	return &s
 }
 
-func (s *Stack) Top() int {
-	return s.top
-}
-
 func (s *Stack) Push(n int) error {
 	s.top++
 
