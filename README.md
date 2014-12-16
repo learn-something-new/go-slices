@@ -2,13 +2,13 @@
 
 A very short example of slices in [Go](https://golang.org/). Copied from my examples of [common data structures](https://github.com/obihann/GoDataStructures/stack), I am using the stack as a way to implament slices.
 
-* [**Arrays**](/arrays)
+* **Arrays**
     A stack built with a traditional array. You will notice this as a fixed size.
 
-* [**Copy**](/Copy)
+* **Copy**
     A stack built with slices implementing the copy method. This is more efficent than a traditional array as it allows you to easily grow the array by making larger arrays and copying your contents over.
 
-* [**Append**](/append)
+* **Append**
     A stack built with append. Append allows us to grow the array as we need, using as little memory as possible.
 
 ##Stacks

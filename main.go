@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/obihann/GoSlices/copy/src"
+	"github.com/obihann/GoSlices/array/src"
+	//"github.com/obihann/GoSlices/copy/src"
+	//"github.com/obihann/GoSlices/append/src"
 )
 
 func main() {
